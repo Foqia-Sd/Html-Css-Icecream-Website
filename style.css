@@ -1,0 +1,310 @@
+body {
+    background-color:#121212
+}
+
+#marquee p {
+    color: white;
+    text-shadow: 0 4px 8px rgba(230, 8, 182, 0.774); /* Optional: Adds a subtle shadow for depth */;;
+}
+
+.head {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.head a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.head a:hover {
+    color: #ff69b4;
+}
+
+.heading {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-top: 40px;
+}
+
+.heading h1, .heading h2 {
+    margin: 0; /* Remove gap between h1 and h2 */
+    padding: 0; /* Remove padding */
+}
+
+.heading h2 {
+    font-size: 30px;
+    padding: 0;
+    font-style: italic;
+    color: #ff69b4;
+    margin-bottom: 30px;
+}
+/*
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.heading h2 {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+
+    transform: translateX(-150px);
+}
+*/
+
+.images img {
+    width: 600px;   /* Set the desired width */
+    height: 600px;  /* Set the desired height */
+    object-fit: cover;  /* Ensures the image covers the area without distortion */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    margin: 0 10px; /* Adds space between images */
+}
+
+.images {
+    display: flex;
+    width: 600px; /* Set the width of the slideshow container */
+    height: 600px; /* Set the height of the slideshow container */
+    margin-left: 28px;
+}
+
+.images img {
+    width: 300px; 
+    height: 300px;
+    object-fit: cover;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.images img {
+    animation: slideInLeft 1s ease-in 1s 1 normal both;
+    
+    transform: translateX(-150px);
+}
+
+/* About Section Icon Styles */
+
+.icon {
+    position: relative;
+    text-align: right;/* Align the icon to the right */
+    padding: 10px; /* Optional: Add padding around the icon */
+    top: 50px;
+    margin-right: 25px; 
+}
+
+/* Optional: Styling for the icon itself */
+.icon img {
+    margin-top: 30px;
+    width: 40px; /* Adjust the width of the icon */
+    height: 40px; /* Adjust the height of the icon */
+    filter: brightness(0) invert(1); /* Invert the icon colors to make it visible on a black background */
+    
+}
+
+.icon #cart-count {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #ff69b4;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for the order heading */
+.orderheading {
+    text-align: center;
+    color: #ff69b4;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-style: italic;
+    text-shadow: 0 4px 8px rgba(230, 8, 182, 0.774); /* Optional: Adds a subtle shadow for depth */;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.orderheading h1:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+
+/* Styling for the images */
+
+.pictures {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the images horizontally */
+    flex-wrap: wrap; /* Wrap the images to the next line if needed */
+    gap: 15px; /* Space between the images */
+    margin: 20px 0; /* Space above and below the image container */
+}
+
+/* Individual picture and button container */
+.picture-item {
+    display: flex;
+    flex-direction: column; /* Stack image and button vertically */
+    align-items: center; /* Center the image and button horizontally */
+}
+
+.picture-item img {
+    width: 180px; /* Set a consistent width for all images */
+    height: 180px; /* Set a consistent height for all images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(230, 8, 182, 0.774); /* Optional: Adds a subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+
+
+.picture-item img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+/* Styling the buttons */
+.picture-item .btn button {
+    width: 100px; /* Button takes full width of its container */
+    padding: 5px 0; /* Padding for the button */
+    font-size: 15px; /* Font size for the button text */
+    background-color: #ff69b4; /* Background color */
+    color: white; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    margin-top: 20px;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.picture-item .btn button:hover {
+    color:  #ff69b4;
+    background-color: #ff1493; /* Darker pink on hover */
+}
+
+.picture-item .btn button {
+    margin-bottom: 10%;
+}
+
+
+/* CONTACT SECTION CODE */
+
+.contact {
+    margin-top: 20%;
+    padding: 5px;
+}
+
+.contact h1 {
+    color: #ff69b4;
+    font-family: sans-serif;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-shadow: 0 4px 8px rgba(230, 8, 182, 0.774); /* Optional: Adds a subtle shadow for depth */;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    margin-top: 0;
+}
+
+.contact h1:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+.service-box {
+    flex: 1 1 10rem;
+    background: #ff69b4;
+    padding: 6rem 2rem 6rem;
+    border-radius: 2rem;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin-left: 37%;
+    border: 0.3rem solid var(--bg-color);
+    transition: 0.3s ease;
+    text-emphasis-color: var(--main-color);
+    box-shadow: 0 4px 8px rgba(230, 8, 182, 0.774);;
+}
+
+.service-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.service-box {
+    margin-bottom: 10%;
+}
+
+/* Form Section CODE */
+
+.form-field {
+    display: flex;
+    flex-direction: column; /* Stack input boxes vertically */
+    gap: 15px; /* Space between each input box */
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field input[type="number"],
+.form-field textarea {
+    width: 80%; /* Set width of input boxes to fill the form */
+    padding: 10px; /* Adjust padding inside the input boxes */
+    margin-top: 10px; /* Reduce the space from the top */
+    border-radius: 30px; /* Optional: Add rounded corners */
+    font-size: 16px; /* Set a comfortable font size */
+    background-color: rgb(243, 133, 243);
+    border-color:#ff1493;
+}
+
+.form-field textarea {
+    resize: none; /* Prevent resizing of the textarea */
+}
+
+.form-field button {
+    padding: 10px 20px; /* Adjust the padding for the button */
+    background-color: #ff69b4; /* Optional: Set button color */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Add rounded corners */
+    color: rgb(255, 255, 255); /* Button text color */
+    cursor: pointer; /* Show pointer on hover */
+    font-size: 16px; /* Set font size */
+}
+
+.form-field button:hover {
+    background-color: #ff4081; /* Optional: Darken button color on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
